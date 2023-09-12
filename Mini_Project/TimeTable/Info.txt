@@ -1,0 +1,7 @@
+Step 1 => I Search the Image of TImetable
+Step 2 => Analyze First 
+    - I required 7 Rows
+    - I required 6 columns
+    - I want one rowspan for first colums after first row
+    - And one Columnspan for Luch break and I alsi set some Lunch text
+    - And for project I also 2 rowsspan for Projects
