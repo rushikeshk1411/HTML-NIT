@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <Form action="action.cs" method="get">
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" required><br><br>
+                <label for="mobile">Mobile:</label>
+                <input type="tel" name="mobile" id="mobile" ><br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email"><br><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass"><br><br>
+                <!-- <label for="LinkedIn">LindedIn</label> -->
+                <!-- <input type="url" name="LinkedIn" id="LinkedIn"><br><br> -->
+
+                <label for="DOB">DOB:</label>
+                <input type="date" name="DOB" id="DOB"><br><br>
+
+                <label for="FTime">Productive Time</label>
+                <input type="time" name="FTime" id="FTime"><br><br>
+
+                <label for="Gender">Gender</label>
+                <section id="Gender">
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Gender" id="Others" value="Other">
+                    <label for="Others">Others</label>
+                </section>
+
+                <label>Skills</label>
+                <section id="Skills">
+                    <input type="checkbox" name="Skills" id="HTML" value="HTML">
+                    <label for="HTML">HTML</label>
+                    <input type="checkbox" name="Skills" id="CSS" value="CSS">
+                    <label for="CSS">CSS</label>
+                    <input type="checkbox" name="Skills" id="Js" value="JavaScript">
+                    <label for="Js">JavaScript</label>
+                </section>
+                <br><br>
+
+                <label for="color">color:</label>
+                <input type="color" name="color" id="color">
+                
+                <br><br>
+                <input type="reset" value="Reset">
+                <input type="submit">
+
+                <!-- <input type="button" value="Submit"> -->
+            </Form>
+        </section>
+    </main>
+</body>
+</html>
