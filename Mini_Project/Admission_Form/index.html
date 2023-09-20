@@ -4,12 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admission Form</title>
+    <style>
+      th, td{
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+      }
+      h1{
+        border: 2px solid red;
+        background-color: rgb(165, 88, 236);
+
+      }
+      body{
+        background-color: rgb(187, 235, 235);
+      }
+      fieldset{
+        background-color: rgb(208, 165, 248);
+      }
+    </style>
   </head>
   <body>
     <form action="action.cs">
+      <div>
       <h1 style="text-align: center; margin: 5px">ADMISSION FORM</h1>
       <section>
-        <legend>Data</legend>
         <header>
           <label for="Formno">Form No:</label>
           <input type="number" name="Formno" id="Formno" /><br /><br />
@@ -17,11 +35,13 @@
           <input type="date" name="TDate" id="TDate" /><br /><br />
           <label for="adnumber">Admission Number:</label>
           <input type="number" name="adnumber" id="adnumber" /><br /><br />
-          <hr />
         </header>
       </section>
       <section>
+      </div>
+      <div id="PersonalDetails">
         <fieldset>
+          
             <legend>Personal Details</legend>
         <label><h3>Student Profile</h3></label>
         <label for="SName">Student Name</label>
@@ -57,7 +77,6 @@
           value="India"
           readonly
         />
-        Likely no change
         <label for="Religion">Religion</label>
         <select name="" id="">
           <option value="Hindu">Hindu</option>
@@ -90,11 +109,37 @@
         <input type="number" pattern="[0-9]{6}" name="pincode" id="Pincode">
 
     </fieldset>
-        <br><br>
+  </div>
+  <br>
+  <section id="AcademicDetails">
+    <div id="PrevSchool">
+      <Table style="width: 100%;">
+        <tr>
+        <th><label for="prevClass">Name of previous School</label></th>
+        <th><label for="Class">Class</label></th>
+        <th><label for="">Year of study</label></th>
+        <th><label for="">Grade</label></th>
+      </tr>
+      </Table>
+      <span >
+        <input type="text" name="prevClass" id="prevClass" size="86px">
+        <input type="text" name="Class" size="16.5px" id="Class">
+        <input type="text" name="YOS" id="YOS" size="45px">
+        <input type="text">
+      </span>
+    </div>
+  </section>
+  <br>
+  <section>
+    <div id="Appraisal">
+      <label for="achievements">mesnsion your child achievements</label><br>
+      <textarea name="achievements" id="achievements" cols="100" rows="3"></textarea>
+    </div>
+  </section>
+        <br>
         <input type="submit" value="Submit">
       </section>
     </form>
+    
   </body>
 </html>
-Student profile Nationality Religion Gender Cast 
-Residential Address pin Code
